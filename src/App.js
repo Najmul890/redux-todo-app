@@ -4,6 +4,7 @@ import {
 } from "react-router-dom";
 import AddBook from "./components/AddBook/AddBook";
 import Books from "./components/Books/Books";
+import EditBook from "./components/EditBook/EditBook";
 import Header from "./components/Header/Header";
 import NotFound from "./components/NotFound/NotFound";
 
@@ -16,6 +17,7 @@ function App() {
        <Routes>
         <Route path="/" element={<Books></Books>} ></Route>
         <Route path="/addBook" element={<AddBook></AddBook>} ></Route>
+        <Route path="/editBook/:id" element={<EditBook></EditBook>} ></Route>
         <Route path="*" element={<NotFound></NotFound>} ></Route>
        </Routes>
     </div>
